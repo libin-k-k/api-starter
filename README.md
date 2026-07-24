@@ -976,6 +976,8 @@ Keep those in dedicated packages or your application.
 
 ## Changelog and license
 
-See `CHANGELOG.md` (when published) for release notes.
+See [CHANGELOG.md](CHANGELOG.md) for release notes.
+
+Current package version: **1.0.0**
 
 Licensed under the [MIT license](LICENSE).

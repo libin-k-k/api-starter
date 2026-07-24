@@ -48,6 +48,7 @@ class DoctorCommand extends Command
         }
 
         $this->newLine();
+        $this->line('Package version: '.\Libinkk\ApiStarter\Version::VERSION);
         $this->line('Default API version: '.ApiVersion::current());
         $this->line('Supported versions: '.implode(', ', ApiVersion::supported()));
         $this->line('Locales: '.implode(', ', (array) config('api-starter.localization.supported', [])));
