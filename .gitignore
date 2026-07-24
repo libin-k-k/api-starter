@@ -1,0 +1,56 @@
+# Markdown
+*.md
+!README.md
+!CHANGELOG.md
+/explanation.md
+
+# Dependencies
+/vendor/
+composer.lock
+
+# IDE / editors
+/.idea/
+/.vscode/
+/.cursor/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# PHP / testing
+.phpunit.result.cache
+.phpunit.cache/
+.pest/
+coverage/
+.php-cs-fixer.cache
+.phan/
+.phpstan/
+psalm.xml
+.php_cs.cache
+
+# Build / logs
+/build/
+/dist/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Node (if used for docs tooling)
+/node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary
+*.tmp
+*.temp
+*.bak
+*.cache

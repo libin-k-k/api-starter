@@ -1,0 +1,87 @@
+{
+    "name": "libinkk/api-starter",
+    "description": "A production-ready API foundation for Laravel with standardized responses, filtering, sorting, validation, exception handling, and enterprise developer experience.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "api",
+        "api-response",
+        "rest",
+        "filtering",
+        "sorting",
+        "pagination",
+        "validation",
+        "exception-handling",
+        "libinkk",
+        "api-starter"
+    ],
+    "license": "MIT",
+    "homepage": "https://www.libinkk.in",
+    "authors": [
+        {
+            "name": "Libin K K",
+            "email": "libinkk1999@gmail.com",
+            "homepage": "https://www.libinkk.in",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "email": "libinkk1999@gmail.com",
+        "docs": "https://www.libinkk.in"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Libinkk\\ApiStarter\\Providers\\ApiStarterServiceProvider"
+            ],
+            "aliases": {
+                "Api": "Libinkk\\ApiStarter\\Facades\\Api"
+            }
+        },
+        "author": {
+            "mobile": "+917708782197"
+        }
+    },
+    "require": {
+        "php": "^8.1|^8.2|^8.3|^8.4",
+        "illuminate/contracts": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/auth": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/database": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/pagination": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/routing": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/validation": "^9.0|^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "pestphp/pest": "^1.22|^2.0|^3.0",
+        "phpstan/phpstan": "^1.10|^2.0",
+        "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libinkk\\ApiStarter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Libinkk\\ApiStarter\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "test:phpunit": "phpunit",
+        "analyse": "phpstan analyse",
+        "format": "pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

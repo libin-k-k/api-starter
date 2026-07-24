@@ -1,0 +1,19 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Builder;
+use Libinkk\ApiStarter\Contracts\Filter;
+
+class {{ class }} implements Filter
+{
+    public function name(): string
+    {
+        return 'filter_name';
+    }
+
+    public function apply(Builder $query, mixed $value): void
+    {
+        // $query->where('column', $value);
+    }
+}

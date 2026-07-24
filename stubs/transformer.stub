@@ -1,0 +1,28 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    public function transform(mixed $resource): array
+    {
+        return [
+            // 'id' => $resource->id,
+        ];
+    }
+
+    /**
+     * @param  iterable<mixed>  $resources
+     * @return list<array>
+     */
+    public function transformCollection(iterable $resources): array
+    {
+        $items = [];
+
+        foreach ($resources as $resource) {
+            $items[] = $this->transform($resource);
+        }
+
+        return $items;
+    }
+}

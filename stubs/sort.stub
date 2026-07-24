@@ -1,0 +1,19 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Builder;
+use Libinkk\ApiStarter\Contracts\Sort;
+
+class {{ class }} implements Sort
+{
+    public function name(): string
+    {
+        return 'sort_name';
+    }
+
+    public function apply(Builder $query, string $direction): void
+    {
+        // $query->orderBy('column', $direction);
+    }
+}
